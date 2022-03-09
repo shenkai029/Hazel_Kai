@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Hazel_Kai/v17
+/bin/Debug_x64
+/bin-int/Debug_x64
+*.bak
