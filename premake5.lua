@@ -26,8 +26,8 @@ project "Hazel_Kai"
 
 	includedirs 
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
-		"%{prj.name}/src"
 	}
 
 	filter "system:windows"
@@ -75,8 +75,8 @@ project "Sandbox"
 
 	includedirs 
 	{
-		"Hazel_Kai/vendor/spdlog/include",
-		"Hazel_Kai/src"
+		"Hazel_Kai/src",
+		"Hazel_Kai/vendor/spdlog/include"
 	}
 
 	links
