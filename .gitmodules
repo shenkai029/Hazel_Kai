@@ -4,3 +4,6 @@
 [submodule "Hazel_Kai/vendor/spdlog"]
 	path = Hazel_Kai/vendor/spdlog
 	url = https://github.com/gabime/spdlog.git
+[submodule "Hazel_Kai/vendor/GLFW"]
+	path = Hazel_Kai/vendor/GLFW
+	url = https://github.com/TheCherno/glfw.git
