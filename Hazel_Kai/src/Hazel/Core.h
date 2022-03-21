@@ -25,8 +25,8 @@
 	#define HZ_ASSERT(...) HZ_EXPAND_MACRO( HZ_INTERNAL_ASSERT_GET_MACRO(__VA_ARGS__)(_, __VA_ARGS__) )
 	#define HZ_CORE_ASSERT(...) HZ_EXPAND_MACRO( HZ_INTERNAL_ASSERT_GET_MACRO(__VA_ARGS__)(_CORE_, __VA_ARGS__) )
 #else
-	#define HZ_ASSERT(...)
-	#define HZ_CORE_ASSERT(...)
+	#define HZ_ASSERT(x, ...)
+	#define HZ_CORE_ASSERT(x, ...)
 #endif
 
 #define BIT(x) (1 << x)
