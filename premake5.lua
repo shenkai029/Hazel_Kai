@@ -64,7 +64,7 @@ project "Hazel_Kai"
 
 	filter "configurations:Debug"
 		defines "HZ_DEBUG"
-		buildoptions "/MD"
+		buildoptions "/MDd"
 		optimize "On"
 
 	filter "configurations:Release"
@@ -115,12 +115,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "HZ_DEBUG"
+		buildoptions "/MDd"
 		optimize "On"
 
 	filter "configurations:Release"
 		defines "HZ_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "HZ_DIST"
+		buildoptions "/MD"
 		optimize "On"
