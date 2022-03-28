@@ -57,14 +57,6 @@ namespace Hazel {
 			s_GLFWInitialized = true;
 		}
 
-		{
-			//HZ_PROFILE_SCOPE("glfwCreateWindow");
-//#if defined(HZ_DEBUG)
-//			if (Renderer::GetAPI() == RendererAPI::API::OpenGL)
-//				glfwWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, GLFW_TRUE);
-//#endif
-		}
-
 		m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_Window);
 		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
