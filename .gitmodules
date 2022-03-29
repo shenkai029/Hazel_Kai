@@ -7,3 +7,9 @@
 [submodule "Hazel_Kai/vendor/GLFW"]
 	path = Hazel_Kai/vendor/GLFW
 	url = https://github.com/TheCherno/glfw.git
+[submodule "imgui"]
+	path = imgui
+	url = https://github.com/TheCherno/imgui.git
+[submodule "Hazel_Kai/vendor/imgui"]
+	path = Hazel_Kai/vendor/imgui
+	url = https://github.com/TheCherno/imgui.git
