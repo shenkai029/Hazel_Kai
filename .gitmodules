@@ -13,3 +13,6 @@
 [submodule "Hazel_Kai/vendor/imgui"]
 	path = Hazel_Kai/vendor/imgui
 	url = https://github.com/TheCherno/imgui.git
+[submodule "Hazel_Kai/vendor/glm"]
+	path = Hazel_Kai/vendor/glm
+	url = https://github.com/g-truc/glm.git

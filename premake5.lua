@@ -16,6 +16,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "Hazel_Kai/vendor/GLFW/include"
 IncludeDir["GLAD"] = "Hazel_Kai/vendor/GLAD/include"
 IncludeDir["ImGui"] = "Hazel_Kai/vendor/imgui"
+IncludeDir["glm"] = "Hazel_Kai/vendor/glm"
 
 include "Hazel_Kai/vendor/GLFW"
 include "Hazel_Kai/vendor/GLAD"
@@ -23,7 +24,7 @@ include "Hazel_Kai/vendor/imgui"
 
 project "Hazel_Kai"
 	location "Hazel_Kai"
-	kind "SharedLib"
+	kind "SharedLib"  
 	language "C++"
 	staticruntime "off"
 
@@ -36,7 +37,9 @@ project "Hazel_Kai"
 	files
 	{
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/vendor/glm/glm/**.hpp",
+		"%{prj.name}/vendor/glm/glm/**.inl",
 	}
 
 	includedirs 
@@ -45,7 +48,8 @@ project "Hazel_Kai"
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.ImGui}",
-		"%{IncludeDir.GLAD}"
+		"%{IncludeDir.GLAD}",
+		"%{IncludeDir.glm}"
 	}
 
 	links
@@ -106,7 +110,8 @@ project "Sandbox"
 	includedirs 
 	{
 		"Hazel_Kai/src",
-		"Hazel_Kai/vendor/spdlog/include"
+		"Hazel_Kai/vendor/spdlog/include",
+		"%{IncludeDir.glm}"
 	}
 
 	links

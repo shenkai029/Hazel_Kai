@@ -30,7 +30,7 @@ namespace Hazel {
 
 		return { (float)xpos, (float)ypos };
 	}
-
+		
 	float WindowsInput::GetMouseXImpl()
 	{
 		auto [x, y] = GetMousePositionImpl();
